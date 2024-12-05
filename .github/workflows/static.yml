@@ -1,0 +1,16 @@
+# Simple workflow for deploying static content to GitHub Pages
+name: GithubActionsTest
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["prod"]
+
+jobs:
+  # Single deploy job since we're just deploying
+  step1: Git Pull
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pull Latest Change
+        run: cd /var/www/wordpress && git pull origin prod
+     
