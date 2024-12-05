@@ -5,7 +5,7 @@ on:
     branches: ["prod"]
 
 jobs:
-  deploy:
+  pull-prod:
     runs-on: self-hosted
     steps:
       - name: Pull Latest Change
