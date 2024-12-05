@@ -9,7 +9,7 @@ on:
 jobs:
   # Single deploy job since we're just deploying
   step1: Git Pull
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Pull Latest Change
         run: cd /var/www/wordpress && git pull origin prod
